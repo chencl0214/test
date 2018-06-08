@@ -12,12 +12,12 @@ class Home(unittest.TestCase):
     def setUp(self):
         desired_caps = {
         'platformName' : 'Android',
-        'platformVersion' : '7.0',
+        'platformVersion' : '6.0',
         'automationName' : 'UIAutomator2',
         #实机
-        'deviceName' : 'A5RNW18119014503',
+        #'deviceName' : 'A5RNW18119014503',
         #虚拟机
-        #'deviceName' : '192.168.96.102:5555',
+        'deviceName' : '192.168.96.102:5555',
         #'app': PATH(
         #    '../../../sample-code/apps/ContactManager/.apk'
         #),
@@ -66,4 +66,3 @@ if __name__ == '__main__':
     testunit = unittest.TestLoader().loadTestsFromTestCase(Home)
     unittest.TextTestRunner(verbosity=2).run(testunit)
     #unittest.main()
-    
